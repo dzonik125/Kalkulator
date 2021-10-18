@@ -21,6 +21,13 @@ public class Main {
 				System.out.println("Ulaz nema 3 parametra!");
 				continue;
 			}
+			int x = Integer.parseInt(b[0]);
+			int y = Integer.parseInt(b[2]);
+			if(b[1].equals("+")) {
+				System.out.println(x + y);
+			}else {
+				System.out.println("Nije podržana operacija!");
+			}
 		}
 	}
 
