@@ -25,14 +25,23 @@ public class Main {
 			int y = Integer.parseInt(b[2]);
 			if(b[1].equals("+")) {
 				addition(x, y);
-			}else {
+			}else if(b[1].equals("-")) {
+				substraction(x, y);
+			}
+			else{
 				System.out.println("Nije podržana operacija!");
 			}
+			
+			
 		}
 	}
 	
 	public static void addition(int a, int b) {
 		System.out.println(a + b);
+	}
+	
+	public static void substraction(int a, int b) {
+		System.out.println(a - b);
 	}
 
 }
